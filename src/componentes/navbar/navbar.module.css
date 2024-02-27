@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+  }
+  
+  .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+  }
+  
