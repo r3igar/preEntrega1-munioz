@@ -4,10 +4,9 @@ const ItemDetailContainer = ({ itemId }) => {
     const [item, setItem] = useState(null);
   
     useEffect(() => {
-      // Aquí puedes hacer una llamada a una API o cargar datos de algún otro lugar
-      // Por ejemplo, podrías cargar los detalles de un producto específico basado en el ID
+      
       const fetchItem = async () => {
-        // Simulando una llamada a una API
+      
         const response = await fetch(`https://api.example.com/products/${itemId}`);
         const data = await response.json();
         setItem(data);
