@@ -1,15 +1,18 @@
 import React from 'react';
-import styles from './navbar/navbar.module.css';
+import { Link } from 'react-router-dom';
+import styles from './navbar.module.css';
 import CartWidget from './CardWidget/CardWidget';
 
 const Navbar = () => {
   return (
     <header className={styles.header}>
-      <h2>forja d20</h2>
+      <h2>
+        <Link to="/" className={styles.brand}>forja d20</Link>
+      </h2>
       <nav className={styles.nav}>
-        <a className={`${styles.btn} ${styles.btnPrimary}`}>Dados</a>
-        <a className={`${styles.btn} ${styles.btnSecondary}`}>Miniaturas</a>
-        <a className={`${styles.btn} ${styles.btnSecondary}`}>Mapas</a>
+        <Link to="/category/dados" className={`${styles.btn} ${styles.btnPrimary}`}>Dados</Link>
+        <Link to="/category/miniaturas" className={`${styles.btn} ${styles.btnSecondary}`}>Miniaturas</Link>
+        <Link to="/category/mapas" className={`${styles.btn} ${styles.btnSecondary}`}>Mapas</Link>
       </nav>
       <CartWidget/>
     </header>
